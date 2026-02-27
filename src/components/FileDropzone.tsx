@@ -32,6 +32,8 @@ export default function FileDropzone({
     },
   });
 
+  const inputProps = getInputProps({ "aria-label": "Upload an image file" });
+
   if (file && previewUrl) {
     return (
       <div className="relative group">
@@ -39,11 +41,11 @@ export default function FileDropzone({
           {...getRootProps()}
           className="rounded-lg border bg-card overflow-hidden cursor-pointer"
         >
-          <input {...getInputProps()} />
+          <input {...inputProps} />
           <div className="flex items-center gap-4 p-4">
             <img
               src={previewUrl}
-              alt="Preview"
+              alt={`Preview of ${file.name}`}
               className="h-20 w-20 rounded object-cover border bg-muted"
             />
             <div className="flex-1 min-w-0 text-left">
@@ -70,7 +72,7 @@ export default function FileDropzone({
         ${isDragActive ? "border-primary bg-primary/5" : "border-muted-foreground/25 hover:border-primary/50"}
       `}
     >
-      <input {...getInputProps()} />
+      <input {...inputProps} />
       <div className="flex flex-col items-center gap-3">
         {isDragActive ? (
           <>
