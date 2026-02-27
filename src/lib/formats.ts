@@ -98,7 +98,7 @@ export interface ConversionSEO {
   canonical: string;
 }
 
-const BASE_URL = "https://converterprivacy.com";
+const BASE_URL = "https://freeprivateconverter.com";
 
 export function getConversionSEO(from: FormatId, to: FormatId): ConversionSEO {
   const fromLabel = FORMATS[from].label;

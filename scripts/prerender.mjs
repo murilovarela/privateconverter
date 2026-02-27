@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.resolve(__dirname, "../dist");
-const BASE_URL = "https://converterprivacy.com";
+const BASE_URL = "https://freeprivateconverter.com";
 
 const FORMATS = {
   png:  { label: "PNG",  canDecode: true,  canEncode: true  },

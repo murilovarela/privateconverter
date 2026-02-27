@@ -19,10 +19,10 @@ export default function HomePage() {
           name="description"
           content="Free online file converter that runs entirely in your browser. Convert images between PNG, JPG, WebP, HEIC, TIFF, AVIF, and more. 100% private — no uploads, no servers."
         />
-        <link rel="canonical" href="https://converterprivacy.com" />
+        <link rel="canonical" href="https://freeprivateconverter.com" />
         <meta property="og:title" content="ConverterPrivacy - Convert Files Privately in Your Browser" />
         <meta property="og:description" content="Free online file converter that runs entirely in your browser. 100% private — no uploads, no servers." />
-        <meta property="og:url" content="https://converterprivacy.com" />
+        <meta property="og:url" content="https://freeprivateconverter.com" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -30,7 +30,7 @@ export default function HomePage() {
             "@type": "WebApplication",
             name: "ConverterPrivacy",
             description: "Free online file converter that runs entirely in your browser. 100% private.",
-            url: "https://converterprivacy.com",
+            url: "https://freeprivateconverter.com",
             applicationCategory: "UtilityApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

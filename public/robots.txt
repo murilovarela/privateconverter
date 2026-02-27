@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://converterprivacy.com/sitemap.xml
+Sitemap: https://freeprivateconverter.com/sitemap.xml

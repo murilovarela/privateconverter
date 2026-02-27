@@ -55,7 +55,7 @@ export default function ConverterPage() {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://converterprivacy.com" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://freeprivateconverter.com" },
         { "@type": "ListItem", position: 2, name: seo.heading, item: seo.canonical },
       ],
     },
