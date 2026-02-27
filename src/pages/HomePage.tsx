@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Shield, Lock, Zap, Upload, MousePointerClick, Download } from "lucide-react";
 import { getConversionPairs, FORMATS } from "@/lib/formats";
 import Converter from "@/components/Converter";
@@ -116,10 +115,8 @@ export default function HomePage() {
             {imageToImage.map((pair) => (
               <Link key={pair.slug} to={`/${pair.slug}`}>
                 <Card className="hover:border-primary/50 transition-colors h-full">
-                  <CardContent className="p-3 flex items-center justify-center gap-2 text-sm">
-                    <Badge variant="secondary">{FORMATS[pair.from].label}</Badge>
-                    <span className="text-muted-foreground">→</span>
-                    <Badge variant="secondary">{FORMATS[pair.to].label}</Badge>
+                  <CardContent className="p-3 text-center text-sm font-medium">
+                    Convert {FORMATS[pair.from].label} to {FORMATS[pair.to].label}
                   </CardContent>
                 </Card>
               </Link>
@@ -137,10 +134,8 @@ export default function HomePage() {
             {imageToPdf.map((pair) => (
               <Link key={pair.slug} to={`/${pair.slug}`}>
                 <Card className="hover:border-primary/50 transition-colors h-full">
-                  <CardContent className="p-3 flex items-center justify-center gap-2 text-sm">
-                    <Badge variant="secondary">{FORMATS[pair.from].label}</Badge>
-                    <span className="text-muted-foreground">→</span>
-                    <Badge variant="outline">PDF</Badge>
+                  <CardContent className="p-3 text-center text-sm font-medium">
+                    Convert {FORMATS[pair.from].label} to PDF
                   </CardContent>
                 </Card>
               </Link>
